@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body class="align">
+
+  <img src="../IMG/LOGO.png" alt="logotipo da empresa">
+
+  <div class="grid">
+
+    <form action="https://httpbin.org/post" method="POST" class="form login">
+
+      <div class="form__field">
+        <input type="submit" value="Entrar" id="btn-entrar">
+      </div>
+
+    </form>
+
+  </div>
+
+  <!-- Script para redirecionamento -->
+  <script>
+    // Redirecionar para o catálogo de filmes ao clicar no botão "Entrar"
+    document.getElementById("btn-entrar").addEventListener("click", (event) => {
+      event.preventDefault(); // Previne o comportamento padrão do botão
+      window.location.href = "../FILMES/Catalago_filmes.html"; // Caminho para o catálogo de filmes
+    });
+  </script>
+
+</body>
+
+</html>
