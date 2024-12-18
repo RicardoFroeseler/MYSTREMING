@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_index_series.css">
+    <title>Catálogo de Séries</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../IMG/LOGO.png" alt="Logo do App" class="logo-img">
+        </div>
+        <div class="header-divider"></div>
+        <nav class="header-nav">
+            <button id="btn-filmes" class="header-btn">Filmes</button>
+            <button id="btn-series" class="header-btn">Séries</button>
+            <button id="btn-animes" class="header-btn-anime">Animes</button>
+        </nav>
+        <div class="user-info">
+            <span id="user-name">Usuário Conectado</span>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Catálogo de Séries</h1>
+        <div class="series-count" id="series-count">Carregando...</div>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Pesquisar por título ou nome...">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="genre-container" class="genre-container"></div>
+        <div id="card-container" class="card-container"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    
+    <script src="script_index_series.js"></script>
+</body>
+</html>

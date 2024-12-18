@@ -1,0 +1,115 @@
+/* Corpo e background geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+
+#seriesBackground {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('caminho-da-imagem-de-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+}
+
+/* Container geral */
+.details-container {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Poster do filme */
+.movie-poster {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.series-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.movie-info p {
+    margin-bottom: 10px;
+}
+
+.series-info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.series-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+/* Player */
+.player-container {
+    flex: 1;
+    height: 400px;
+    background: #000;
+    border: solid 1px rgba(248, 232, 8, 0.644);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .movie-poster, .info-and-player {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .player-container {
+        height: 300px;
+    }
+}
